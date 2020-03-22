@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class NumberArray {
-    public static void  displayArray (int[][] array) {
+    public static void displayArray(int[][] array) {
         for (int row = 0; row < array.length; row++) {
             for (int col = 0; col < array[row].length; col++) {
                 System.out.printf("%-6d", array[row][col]);
@@ -11,12 +11,12 @@ public class NumberArray {
         System.out.println();
     }
 
-    public static int[][] addElement (int[][] array) {
+    public static int[][] addElement(int[][] array) {
         Scanner scanner = new Scanner(System.in);
         int value;
         for (int row = 0; row < array.length; row++) {
             for (int col = 0; col < array[row].length; col++) {
-                System.out.printf("Enter integer element at row %d - col %d: ", row,col);
+                System.out.printf("Enter integer element at row %d - col %d: ", row, col);
                 array[row][col] = scanner.nextInt();
             }
         }
@@ -63,7 +63,7 @@ public class NumberArray {
         int[][] demoArray = new int[row][col];
         addElement(demoArray);
         System.out.println();
-        System.out.println("Here is your matrix");
+        System.out.println("Here is your matrix: ");
         displayArray(demoArray);
 
         System.out.println("Let me find the maximum Element in this matrix!");
